@@ -1,0 +1,173 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24440,
+      "max": [
+        0.9366652965545654,
+        0.7510561943054199,
+        1.0519427061080933
+      ],
+      "min": [
+        -0.8297855854034424,
+        -0.4605288505554199,
+        -0.9949991106987
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 293280,
+      "componentType": 5126,
+      "count": 24440,
+      "max": [
+        0.9999544620513916,
+        0.999956488609314,
+        0.9999494552612305
+      ],
+      "min": [
+        -0.99994957447052,
+        -0.9999909996986389,
+        -0.9999968409538269
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24440,
+      "max": [
+        1.0,
+        0.7960784435272217,
+        0.7960784435272217,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 119568,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "gustavoSiqueira (https://sketchfab.com/gsiqueira)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/teste-a8521c4ba73f430db5a9297d4638bdb0",
+      "title": "teste"
+    },
+    "generator": "Sketchfab-15.20.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 478272,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 586560,
+      "byteOffset": 478272,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 391040,
+      "byteOffset": 1064832,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1455872,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 2,
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        2.208248774809851e-16,
+        6.126069176321186e-17,
+        0.0,
+        -6.120398687786007e-17,
+        -0.00025677736266538354,
+        0.9999999403953552,
+        0.0,
+        2.2084060053006852e-16,
+        -0.9999999403953552,
+        -0.00025677736266538354,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Merged_Earthquake_82_optim.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

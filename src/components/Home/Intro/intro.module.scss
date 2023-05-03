@@ -1,0 +1,41 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.intro {
+    margin: 0 0 8rem;
+
+    @include device-up(lg) {
+        margin: 0;
+    }
+
+    &-container {
+        @include device-up(lg) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            height: 60rem;
+        }
+    }
+
+    &-content {
+        max-width: 56rem;
+
+        span {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            @include gradient-color;
+            font-size: 6.4rem;
+            font-weight: 500;
+            margin: 1rem 0 2rem;
+            max-width: 50rem;
+        }
+    }
+
+    &-object3d {
+        height: 100%;
+    }
+
+}

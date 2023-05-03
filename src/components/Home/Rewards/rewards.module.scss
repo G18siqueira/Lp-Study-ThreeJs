@@ -1,0 +1,43 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.rewards {
+    margin: 0 0 8rem;
+
+    @include device-up(lg) {
+        margin: 0 0 16rem;
+    }
+
+    &-container {
+        display: grid;
+
+        @include device-up(lg) {
+            grid-template-columns: repeat(2, 1fr);
+            height: 52rem;
+        }
+    }
+
+    &-content {
+        max-width: 56rem;
+
+        h2 {
+            margin: 0 0 6rem;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+
+        &_item {}
+    }
+
+    &-object3d {
+        height: 35rem;
+
+        @include device-up(lg) {
+            height: 100%;
+        }
+    }
+}
