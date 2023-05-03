@@ -18,8 +18,8 @@ const Testimonials = () => {
 			transition: {
 				type: 'spring',
 				bounce: 0.4,
-				duration: 1,
-				delay: 0.1 * i,
+				duration: 2,
+				delay: 0.2 * i,
 			},
 		}),
 	};

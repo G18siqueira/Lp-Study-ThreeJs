@@ -12,7 +12,7 @@ const Resources = () => {
 		transition: {
 			type: 'spring',
 			bounce: 0.4,
-			duration: 0.8,
+			duration: 2,
 			delay: 0.15,
 		},
 	};

@@ -13,7 +13,7 @@ const Intro = () => {
 		transition: {
 			type: 'spring',
 			bounce: 0.4,
-			duration: 1,
+			duration: 2,
 			delay: 0.15,
 		},
 	});
