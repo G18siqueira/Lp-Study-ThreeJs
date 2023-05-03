@@ -19,9 +19,15 @@
 
     &-content {
         max-width: 56rem;
+        margin: 0 0 6rem;
 
         h2 {
             margin: 0 0 6rem;
+            text-align: center;
+
+            @include device-up(lg) {
+                text-align: initial;
+            }
         }
     }
 
@@ -30,7 +36,13 @@
         flex-direction: column;
         gap: 6rem;
 
-        &_item {}
+        &_item {
+            text-align: center;
+
+            @include device-up(lg) {
+                text-align: initial;
+            }
+        }
     }
 
     &-object3d {

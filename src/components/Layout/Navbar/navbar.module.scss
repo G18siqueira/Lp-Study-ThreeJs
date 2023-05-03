@@ -9,13 +9,66 @@
 
     &-nav {
         &_links {
-            display: flex;
+            display: none;
             gap: 2rem;
+
+            @include device-up(lg) {
+                display: flex;
+            }
         }
 
         &_link {
             font-size: 1.4rem;
             padding: 1rem;
+
+        }
+    }
+
+    &-menu {
+        font-size: 2.8rem;
+
+        @include device-up(lg) {
+            display: none;
+        }
+    }
+
+    &-mobile {
+        &_links {
+            display: flex;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 28rem;
+            height: 100%;
+            background-color: $black;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 10;
+
+            @include device-up(lg) {
+                display: none;
+            }
+
+            svg {
+                font-size: 2.8rem;
+                position: absolute;
+                top: 4rem;
+                left: 4rem;
+            }
+
+            li {
+                width: 100%;
+            }
+
+            a {
+                display: inline-flex;
+                justify-content: center;
+                width: 100%;
+                font-size: 1.6rem;
+                padding: 3rem;
+            }
         }
     }
 }

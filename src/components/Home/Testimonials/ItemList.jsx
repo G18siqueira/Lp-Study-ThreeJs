@@ -1,9 +1,19 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import styles from './testimonials.module.scss';
 
-const ItemList = ({ src, alt, width, height, name, role, comment }) => {
+const ItemList = ({
+	src,
+	alt,
+	width,
+	height,
+	name,
+	role,
+	comment,
+	...rest
+}) => {
 	return (
-		<li className={styles['testimonials-list_item']}>
+		<motion.li {...rest} className={styles['testimonials-list_item']}>
 			<div className={styles['header']}>
 				<Image src={src} alt={alt} width={width} height={height} />
 
@@ -15,7 +25,7 @@ const ItemList = ({ src, alt, width, height, name, role, comment }) => {
 			<div className={styles['comment']}>
 				<p className="light">{comment}</p>
 			</div>
-		</li>
+		</motion.li>
 	);
 };
 

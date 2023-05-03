@@ -15,6 +15,14 @@
         gap: 6rem;
     }
 
+    h2 {
+        text-align: center;
+
+        @include device-up(lg) {
+            text-align: initial;
+        }
+    }
+
     &-list {
         display: grid;
         gap: 2rem;
@@ -31,8 +39,17 @@
             .header {
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
                 gap: 3rem;
                 margin: 0 0 2rem;
+
+                @include device-up(lg) {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    text-align: initial;
+                }
 
                 img {
                     width: 7.4rem;
@@ -48,6 +65,13 @@
                 span {
                     font-size: 1.4rem;
                     line-height: normal;
+                }
+            }
+
+            .comment{
+                text-align: center;
+                @include device-up(lg){
+                    text-align: initial;
                 }
             }
         }

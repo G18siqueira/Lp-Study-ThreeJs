@@ -4,12 +4,15 @@
 .footer {
     &-content1 {
         display: grid;
+        justify-content: center;
         gap: 2rem;
         margin: 0 0 4rem;
+        text-align: center;
 
         @include device-up(lg) {
             display: flex;
             justify-content: space-between;
+            text-align: left;
         }
     }
 
